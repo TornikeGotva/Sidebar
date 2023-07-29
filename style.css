@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e6e6fa;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 40vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  transform: translateX(0.1rem);
+}
+
+.sidebar_info {
+  margin-top: 5rem;
+}
+
+.sidebar_info > li {
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: grey;
+  list-style: none;
+}
+
+.sidebar_info > li:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  opacity: 0.4;
+  transition: all 1s linear;
+  transform: translateX(5px);
+}
+
+.xmark {
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 30rem;
+  font-size: 2rem;
+  fill: red;
+  cursor: pointer;
+}
+
+.xmark:hover {
+  fill: black;
+}
+
+.bar {
+  position: absolute;
+  margin-left: 80rem;
+  margin-top: 3rem;
+  height: 35px;
+  fill: red;
+  width: 30px;
+  cursor: pointer;
+}
+
+.bar:hover {
+  fill: black;
+}
+
+.sidebar-hidden {
+  transform: translateX(-35rem);
+  transition: all 0.5s linear;
+}
